@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dishListWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.DishListController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+              prefWidth="400.0">
+            <children>
+                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" prefHeight="100.0" prefWidth="400.0" text="Dish">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Label>
+                <ListView onMouseClicked="#handleClickListView" fx:id="dishListView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0"/>
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" onAction="#showAddDishDialog" prefHeight="50.0" prefWidth="400.0"
+                        text="Add New Dish"/>
+                <Button onAction="#showEditDishDialog" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity"
+                        mnemonicParsing="false" prefHeight="50.0" prefWidth="400.0" text="Edit Dish"/>
+            </children>
+        </VBox>
+        <VBox layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="600.0" prefWidth="400.0">
+            <children>
+                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                       minWidth="-Infinity" prefHeight="100.0" prefWidth="400.0" text="Ingredients">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Label>
+                <ListView fx:id="ingredientsListView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0"/>
+                <Button onAction="#deleteDish" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity"
+                        mnemonicParsing="false" prefHeight="50.0" prefWidth="400.0" text="Delete Dish"/>
+                <Button fx:id="showMainSceneButton" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showMainScene"
+                        prefHeight="50.0" prefWidth="400.0" text="Back"/>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
