@@ -83,7 +83,7 @@ public class DishListController {
             //TODO: Add check for null name or ingredients
             dishData.addDish(dishController.getNewDish());
 
-            // TODO: Change the save contacts method to be done in application close
+            // TODO: Change the save dishes method to be done in application close
             dishData.saveDishes();
         }
     }
@@ -127,7 +127,7 @@ public class DishListController {
             dishListView.refresh();
             ingredientsListView.refresh();
 
-            // TODO: Change the save contacts method to be done in application close
+            // TODO: Change the save dishes method to be done in application close
             dishData.saveDishes();
         }
     }
@@ -159,7 +159,7 @@ public class DishListController {
             dishListView.getSelectionModel().selectLast();
             ingredientsListView.setItems(dishListView.getSelectionModel().getSelectedItem().getIngredients());
 
-            // TODO: Change the save contacts method to be done in application close
+            // TODO: Change the save dishes method to be done in application close
             dishData.saveDishes();
         }
     }
