@@ -80,7 +80,16 @@ public class DishListController {
         Optional<ButtonType> result = dialog.showAndWait();
         if (result.isPresent() && result.get() == ButtonType.OK) {
             DishController dishController = fxmlLoader.getController();
-            //TODO: Add check for null name or ingredients
+
+            if (dishController.getNewDish() == null) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Dish lacking information");
+                alert.setHeaderText(null);
+                alert.setContentText("Your new dish must have a name and at least one ingredient.");
+                alert.showAndWait();
+                return;
+            }
+
             dishData.addDish(dishController.getNewDish());
 
             // TODO: Change the save dishes method to be done in application close
@@ -123,6 +132,7 @@ public class DishListController {
 
         Optional<ButtonType> result = dialog.showAndWait();
         if (result.isPresent() && result.get() == ButtonType.OK) {
+            //TODO: Add check for null name or ingredients
             dishController.updateDish(selectedDish);
             dishListView.refresh();
             ingredientsListView.refresh();

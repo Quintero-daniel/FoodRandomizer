@@ -19,6 +19,10 @@ public class DishController {
     private TextArea ingredientsField;
 
     public Dish getNewDish() {
+        if (dishNameField.getText().isEmpty() || ingredientsField.getText().isEmpty()) {
+            return null;
+        }
+
         String name = dishNameField.getText().toLowerCase();
         String ingredients = ingredientsField.getText().toLowerCase();
 
@@ -27,8 +31,9 @@ public class DishController {
 
         ingredients = ingredients.replaceAll("[^a-zA-Z\\s,]", "");
 
-
-        if (ingredients.contains(",")) {
+        if (ingredients.length() == 0) {
+            return null;
+        } else if (ingredients.contains(",")) {
             String[] splitIngredients = ingredients.split(",");
             List<String> ingredientsList = Arrays.asList(splitIngredients);
 
