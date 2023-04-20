@@ -55,7 +55,6 @@ public class DishController {
             }
             ingredientsField.setText(ingredientsString.toString());
         } else {
-            //TODO: Check the case whether there's no ingredients
             ingredientsField.setText("");
         }
     }

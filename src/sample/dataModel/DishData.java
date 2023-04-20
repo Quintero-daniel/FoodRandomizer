@@ -65,15 +65,20 @@ public class DishData {
 
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
 
-                    Element dishElement = (Element) node;
+                    Element element = (Element) node;
 
-                    dishName = dishElement.getElementsByTagName(NAME).item(0).getTextContent();
+                    Node dishElement = element.getElementsByTagName(NAME).item(0);
+                    Element ingredientsElement = (Element) element.getElementsByTagName(INGREDIENTS).item(0);
 
-                    Element ingredientsElement = (Element) dishElement.getElementsByTagName(INGREDIENTS).item(0);
+                    if (dishElement == null || ingredientsElement == null) {
+                        continue;
+                    }
 
                     for (int j = 0; j < ingredientsElement.getElementsByTagName(INGREDIENT).getLength(); j++) {
                         ingredients.add(ingredientsElement.getElementsByTagName(INGREDIENT).item(j).getTextContent());
                     }
+
+                    dishName = dishElement.getTextContent();
                 }
                 addDish(new Dish(dishName, ingredients));
                 ingredients.clear();

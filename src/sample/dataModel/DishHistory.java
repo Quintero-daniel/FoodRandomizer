@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DishHistory {
+public class DishHistory implements Comparable<DishHistory> {
     private final SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
     private SimpleStringProperty name = new SimpleStringProperty("");
     private SimpleStringProperty date = new SimpleStringProperty("");
@@ -41,5 +41,19 @@ public class DishHistory {
     @Override
     public String toString() {
         return this.getName() + " - " + this.getDate();
+    }
+
+    @Override
+    public int compareTo(DishHistory o) {
+        Date date1;
+        Date date2;
+        try {
+            date1 = formatter.parse(this.getDate());
+            date2 = formatter.parse(o.getDate());
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+
+        return (date1.before(date2)) ? -1 : ((date1.after(date2)) ? 1 : 0);
     }
 }

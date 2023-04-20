@@ -1,1 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><dishes><dish><name>Bolognese</name><ingredients><ingredient>Spaghetti</ingredient><ingredient>Beef mince</ingredient><ingredient>Butter</ingredient><ingredient>Bolognese sauce</ingredient><ingredient>Pasta</ingredient></ingredients></dish><dish><name>Mexican Bowl</name><ingredients><ingredient>Chicken or Beef</ingredient><ingredient>Beans</ingredient><ingredient>Capsicum</ingredient><ingredient>Onion</ingredient><ingredient>Carrot</ingredient><ingredient>White rice</ingredient></ingredients></dish><dish><name>Frijoles</name><ingredients><ingredient>Capsicum</ingredient><ingredient>White rice</ingredient><ingredient>Beans</ingredient><ingredient>Beef</ingredient><ingredient>Onion</ingredient><ingredient>Tomato</ingredient><ingredient>Butter</ingredient><ingredient>Salt &amp; Pepper</ingredient></ingredients></dish><dish><name>Lentejas</name><ingredients><ingredient>Capsicum</ingredient><ingredient>White rice</ingredient><ingredient>Lentils</ingredient><ingredient>Beef</ingredient><ingredient>Onion</ingredient><ingredient>Tomato</ingredient><ingredient>Butter</ingredient><ingredient>Salt &amp; Pepper</ingredient></ingredients></dish><dish><name>Tuna rice</name><ingredients><ingredient>Frozen veggies</ingredient><ingredient>Rice</ingredient><ingredient>Tuna</ingredient><ingredient>Salt &amp; Pepper</ingredient></ingredients></dish><dish><name>Chicken pasta</name><ingredients><ingredient>Chicken</ingredient><ingredient>Spaghetti</ingredient><ingredient>Bacon</ingredient><ingredient>Mushrooms</ingredient><ingredient>Butter</ingredient><ingredient>Salt &amp; Pepper</ingredient></ingredients></dish><dish><name>Salmon</name><ingredients><ingredient>Salmon</ingredient><ingredient>Rice</ingredient><ingredient>Broccoli</ingredient><ingredient>Salt &amp; Pepper</ingredient></ingredients></dish></dishes>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dishes>
+    <dish>
+        <name>Bolognese</name>
+        <ingredients>
+            <ingredient>Spaghetti</ingredient>
+            <ingredient>Beef mince</ingredient>
+            <ingredient>Butter</ingredient>
+            <ingredient>Bolognese sauce</ingredient>
+            <ingredient>Pasta</ingredient>
+        </ingredients>
+    </dish>
+    <dish>
+        <name>Mexican Bowl</name>
+        <ingredients>
+            <ingredient>Chicken or Beef</ingredient>
+            <ingredient>Beans</ingredient>
+            <ingredient>Capsicum</ingredient>
+            <ingredient>Onion</ingredient>
+            <ingredient>Carrot</ingredient>
+            <ingredient>White rice</ingredient>
+        </ingredients>
+    </dish>
+    <dish>
+        <name>Frijoles</name>
+        <ingredients>
+            <ingredient>Capsicum</ingredient>
+            <ingredient>White rice</ingredient>
+            <ingredient>Beans</ingredient>
+            <ingredient>Beef</ingredient>
+            <ingredient>Onion</ingredient>
+            <ingredient>Tomato</ingredient>
+            <ingredient>Butter</ingredient>
+            <ingredient>Salt &amp; Pepper</ingredient>
+        </ingredients>
+    </dish>
+    <dish>
+        <name>Lentejas</name>
+        <ingredients>
+            <ingredient>Capsicum</ingredient>
+            <ingredient>White rice</ingredient>
+            <ingredient>Lentils</ingredient>
+            <ingredient>Beef</ingredient>
+            <ingredient>Onion</ingredient>
+            <ingredient>Tomato</ingredient>
+            <ingredient>Butter</ingredient>
+            <ingredient>Salt &amp; Pepper</ingredient>
+        </ingredients>
+    </dish>
+    <dish>
+        <name>Tuna rice</name>
+        <ingredients>
+            <ingredient>Frozen veggies</ingredient>
+            <ingredient>Rice</ingredient>
+            <ingredient>Tuna</ingredient>
+            <ingredient>Salt &amp; Pepper</ingredient>
+        </ingredients>
+    </dish>
+    <dish>
+        <name>Chicken pasta</name>
+        <ingredients>
+            <ingredient>Chicken</ingredient>
+            <ingredient>Spaghetti</ingredient>
+            <ingredient>Bacon</ingredient>
+            <ingredient>Mushrooms</ingredient>
+            <ingredient>Butter</ingredient>
+            <ingredient>Salt &amp; Pepper</ingredient>
+        </ingredients>
+    </dish>
+    <dish>
+        <name>Salmon</name>
+        <ingredients>
+            <ingredient>Salmon</ingredient>
+            <ingredient>Rice</ingredient>
+            <ingredient>Broccoli</ingredient>
+            <ingredient>Salt &amp; Pepper</ingredient>
+        </ingredients>
+    </dish>
+</dishes>

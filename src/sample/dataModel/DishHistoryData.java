@@ -13,6 +13,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
 
 public class DishHistoryData {
 
@@ -32,7 +33,7 @@ public class DishHistoryData {
         return this.history;
     }
 
-    public void addDishHistory(DishHistory dishHistory){
+    public void addDishHistory(DishHistory dishHistory) {
         this.history.add(dishHistory);
     }
 
@@ -57,10 +58,11 @@ public class DishHistoryData {
                     String dishName = dishElement.getElementsByTagName(NAME).item(0).getTextContent();
                     String dishDate = dishElement.getElementsByTagName(DATE).item(0).getTextContent();
 
-                    //TODO: Add date sorting
                     history.add(new DishHistory(dishName, dishDate));
                 }
             }
+
+            Collections.sort(history);
 
         } catch (IOException | SAXException | ParserConfigurationException e) {
             e.printStackTrace();
